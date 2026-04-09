@@ -104,7 +104,7 @@ This is a prototype, not production-ready.
 ## Demo Credentials
 
 Email: [investigator@spectre.internal](mailto:investigator@spectre.internal)
-Password: investigator123
+Password: Spectre2025!
 
 ---
 
