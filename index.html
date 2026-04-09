@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+  <title>Spectre – Anonymous Reporting System</title>
+  <link rel="manifest" href="data:application/json;base64,eyJuYW1lIjoiU3BlY3RyZSIsInNob3J0X25hbWUiOiJTcGVjdHJlIiwic3RhcnRfdXJsIjoiLiIsImRpc3BsYXkiOiJzdGFuZGFsb25lIiwidGhlbWVfY29sb3IiOiIjMGEwYTBiIn0=">
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div id="spectre-root">
+
+  <!-- Navigation -->
+  <nav class="sp-nav" id="navBar" style="display:none;">
+    <div class="sp-logo">
+      <span class="sp-logo-dot"></span>SPECTRE
+    </div>
+    <div class="sp-nav-tabs" id="navTabs">
+      <!-- Tabs populated by app.js based on mode -->
+    </div>
+    <div style="display:flex; gap:12px; align-items:center;">
+      <div class="sp-enc-indicator">
+        <span class="sp-enc-dot"></span> E2E
+      </div>
+      <button class="sp-btn secondary" style="padding:6px 12px; font-size:11px;" onclick="exitMode()">Exit</button>
+    </div>
+  </nav>
+
+  <!-- Dynamic content injected by app.js -->
+  <div id="mainContent" style="position:relative; min-height:100vh;"></div>
+
+</div>
+
+<!-- 1. Database / persistence layer -->
+<script src="db.js"></script>
+
+<!-- 2. Application logic + rendering -->
+<script src="app.js"></script>
+</body>
+</html>
