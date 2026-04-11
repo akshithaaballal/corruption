@@ -107,17 +107,3 @@ This is a prototype, not production-ready.
 
 Email: [investigator@spectre.internal](mailto:investigator@spectre.internal)
 Password: Spectre2025!
-
----
-
-## Reality Check
-
-This project shows solid understanding of cryptography and system design.
-
-But it is still:
-
-* A frontend-only prototype
-* Not deployable in its current form
-
-If you present it honestly as a secure prototype, it works.
-If you oversell it, it will fall apart under questioning.
